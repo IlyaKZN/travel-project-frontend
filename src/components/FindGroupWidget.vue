@@ -1,13 +1,19 @@
 <template>
-  <form class="form">
-    <label for="#starting-point-input" class="label">Откуда</label>
-    <input id="#starting-point-input" class="input" placeholder="Откуда" type="text" />
-    <label for="#finishing-point-input" class="label">Куда</label>
-    <input id="#finishing-point-input" class="input" placeholder="Куда" type="text" />
-    <label for="#date-input" class="label">Когда</label>
-    <input id="#date-input" class="input" placeholder="Когда" type="text" />
-    <button class="button" type="submit">Найти группу</button>
-  </form>
+  <section class="container">
+    <h1 class="title">Новые люди - новые места</h1>
+    <p class="description">легкий способ путешествовать и<br>
+      заводить новые знакомства</p>
+    <form class="form">
+      <label for="#starting-point-input" class="label">Откуда</label>
+      <input id="#starting-point-input" class="input" placeholder="Откуда" type="text" />
+      <label for="#finishing-point-input" class="label">Куда</label>
+      <input id="#finishing-point-input" class="input" placeholder="Куда" type="text" />
+      <label for="#date-input" class="label">Когда</label>
+      <input id="#date-input" class="input" placeholder="Когда" type="text" />
+      <button class="button" type="submit">Найти группу</button>
+    </form>
+    <router-link class="reference-link" to="/">Как это работает?</router-link>
+  </section>
 </template>
 
 <script lang="ts">
@@ -19,6 +25,31 @@ export default defineComponent({
 </script>
 
 <style lang="sass" scoped>
+
+.container
+  height: calc( 100vh - 80px )
+  background-image: url('../assets/MainPageGradient.svg')
+  background-size: cover
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.title
+  margin: 0 0 20px
+  color: white
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 55px
+  line-height: 68px
+
+.description
+  color: white
+  font-size: 20px
+  line-height: 24px
+  font-weight: 400
+  text-align: center
+  margin-bottom: 80px
 
 .form
   min-height: 187px
@@ -62,5 +93,12 @@ export default defineComponent({
   cursor: pointer
   font-family: "Inter"
   letter-spacing: 0.8px
+
+.reference-link
+  margin-top: 23px
+  color: white
+  font-weight: 400
+  font-size: 18px
+  line-height: 22px
 
 </style>
