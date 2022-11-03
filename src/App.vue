@@ -21,6 +21,7 @@ export default defineComponent({
 
 <style lang="sass">
 @import url(./vendor/fonts/index.css)
+
 body
   margin: 0
   font-family: 'Inter'

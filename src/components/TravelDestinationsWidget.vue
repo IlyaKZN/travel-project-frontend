@@ -3,7 +3,9 @@
     <h2 class="title">Направления путешествий</h2>
     <p class="description">Ознакомьтесь с самыми популярными направлениями путешествий</p>
     <div class="cards-container">
-      <div class="main-card">
+      <div class="main-card"
+        :style="{ backgroundImage: `url(${require('../assets/travel-destinations/Russia.png')})` }"
+      >
         <h3 class="main-card-name">Россия</h3>
         <p class="main-card-description">Текст Текст Текст Текст Текст Текст Текст</p>
       </div>
@@ -29,12 +31,12 @@ export default defineComponent({
         {
           name: 'Байкал',
           description: 'Огромное древнее озеро в горах Сибири к северу от монгольской границы. Байкал считается самым глубоким озером в мире',
-          image: '',
+          image: 'Baikal.png',
         },
         {
           name: 'Карелия',
           description: 'Уникальный по своей природе, культуре и истории регион России, который имеет самую протяженную границу с Европейским союзом',
-          image: '',
+          image: 'Karelia.png',
         },
       ],
     };
@@ -78,7 +80,6 @@ export default defineComponent({
   flex-direction: column
   justify-content: flex-end
   padding: 30px 40px
-  background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1274&q=80)
   background-size: cover
   border-radius: 35px
   cursor: pointer

@@ -1,8 +1,16 @@
 <template>
   <footer class="footer">
     <div class="social-networks-links-container">
-      <a href="https://vk.com" class="social-network-link" aria-label="link to vk.com"/>
-      <a href="https://web.telegram.org/" class="social-network-link" aria-label="link to web.telegram.org"/>
+      <a href="https://vk.com"
+        class="social-network-link"
+        aria-label="link to vk.com"
+        :style="{backgroundImage: `url(${require('../assets/vk-logo.svg')})`}"
+      />
+      <a href="https://web.telegram.org/"
+        class="social-network-link"
+        aria-label="link to web.telegram.org"
+        :style="{backgroundImage: `url(${require('../assets/tg-logo.svg')})`}"
+      />
     </div>
     <div class="info-container">
       <router-link class="info-link" to="/">о нас</router-link>
@@ -40,7 +48,8 @@ export default defineComponent({
   display: block
   height: 55px
   width: 55px
-  background-image: url('../assets/vk-logo.svg')
+  background-size: cover
+  background-position: center
 
 .info-container
   margin-bottom: 42px

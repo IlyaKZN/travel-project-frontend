@@ -7,7 +7,7 @@
         <div class="carousel-item">
           <img
             class="carousel-item-link"
-            src="../assets/testImage.jpg"
+            :src="`${require(`../assets/feed/${slide.image}`)}`"
             alt="image"
             @click="followLink(slide.link)"
             @keypress="followLink(slide.link)"
@@ -35,27 +35,27 @@ export default defineComponent({
     return {
       slidesData: [
         {
-          image: 'test',
+          image: 'Feed1.png',
           link: '/test',
         },
         {
-          image: 'test',
+          image: 'Feed2.png',
           link: '/test',
         },
         {
-          image: 'test',
+          image: 'Feed3.png',
           link: '/test',
         },
         {
-          image: 'test',
+          image: 'Feed1.png',
           link: '/test',
         },
         {
-          image: 'test',
+          image: 'Feed2.png',
           link: '/test',
         },
         {
-          image: 'test',
+          image: 'Feed3.png',
           link: '/test',
         },
       ],

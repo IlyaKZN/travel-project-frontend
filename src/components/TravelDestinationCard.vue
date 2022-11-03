@@ -1,5 +1,7 @@
 <template>
-  <div class="card">
+  <div class="card"
+    :style="{backgroundImage: `url(${require(`../assets/travel-destinations/${cardData.image}`)})`}"
+  >
     <h3 class="name">{{ cardData.name }}</h3>
     <p class="description">{{ cardData.description }}</p>
   </div>
@@ -27,7 +29,6 @@ export default defineComponent({
   flex-direction: column
   justify-content: flex-end
   padding: 30px 40px
-  background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1274&q=80)
   background-size: cover
   border-radius: 35px
   cursor: pointer

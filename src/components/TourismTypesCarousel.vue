@@ -6,7 +6,7 @@
         <div class="carousel-item">
           <img
             class="carousel-item-link"
-            src="../assets/testImage.jpg"
+            :src="getImgUrl(slide.image)"
             alt="image"
             @click="followLink(slide.link)"
             @keypress="followLink(slide.link)"
@@ -35,33 +35,23 @@ export default defineComponent({
     return {
       slidesData: [
         {
-          image: '../../public/WeTravel.svg',
-          name: 'test1',
+          image: 'Kayaking.png',
+          name: 'Каякинг',
           link: '/test',
         },
         {
-          image: '../assets/testImage.jpg',
-          name: 'test2',
+          image: 'Mountain.png',
+          name: 'Горный',
           link: '/test',
         },
         {
-          image: '../assets/testImage.jpg',
-          name: 'test3',
+          image: 'OnFoot.png',
+          name: 'Пеший',
           link: '/test',
         },
         {
-          image: '../assets/testImage.jpg',
-          name: 'test4',
-          link: '/test',
-        },
-        {
-          image: '../assets/testImage.jpg',
-          name: 'test5',
-          link: '/test',
-        },
-        {
-          image: '../assets/testImage.jpg',
-          name: 'test6',
+          image: 'Cycling.png',
+          name: 'Велотуризм',
           link: '/test',
         },
       ],
@@ -70,6 +60,10 @@ export default defineComponent({
   methods: {
     followLink(link: string) {
       this.$router.push(link);
+    },
+    getImgUrl(imageName: string) {
+      // eslint-disable-next-line import/no-dynamic-require, global-require
+      return require(`../assets/tourism-types/${imageName}`);
     },
   },
 });
