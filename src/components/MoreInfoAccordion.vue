@@ -58,7 +58,7 @@ export default defineComponent({
 
 .container
   width: 100%
-  margin-bottom: 80px
+  margin-bottom: 20px
 
 .title
   margin: 0 0 35px 0

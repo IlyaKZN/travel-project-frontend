@@ -34,6 +34,8 @@ export default defineComponent({
 
 .footer
   margin-bottom: 80px
+  padding-top: 70px
+  box-sizing: border-box
   width: 100%
   display: flex
   flex-direction: column

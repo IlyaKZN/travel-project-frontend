@@ -21,13 +21,13 @@ export default defineComponent({
 <style lang="sass" scoped>
 
 .button
+  border: 1px solid rgba(0, 0, 0, 0.1)
   padding: 15px 20px
   box-sizing: border-box
   background-color: $primaryColor
   width: 100%
   font-size: 20px
   line-height: 24px
-  border: none
   color: white
   border-radius: 18px
   cursor: pointer

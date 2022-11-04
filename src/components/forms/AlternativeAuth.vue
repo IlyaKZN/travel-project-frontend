@@ -32,7 +32,7 @@ export default defineComponent({
   gap: 10px
 
 .transition-text
-  margin: 0
+  margin-bottom: 10px
   font-size: 15px
   line-height: 18px
   text-transform: uppercase
@@ -51,7 +51,7 @@ export default defineComponent({
   padding: 0
   width: 100%
   height: 56px
-  border: none
+  border: 1px solid rgba(0, 0, 0, 0.1)
   outline: none
   border-radius: 18px
   cursor: pointer
@@ -71,7 +71,6 @@ export default defineComponent({
   display: flex
   align-items: center
   justify-content: center
-  border: 1px solid rgba(0, 0, 0, 0.1)
   gap: 14px
   font-size: 15px
   line-height: 18px
