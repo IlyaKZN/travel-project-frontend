@@ -32,3 +32,10 @@
   font-weight: 800;
   src: url("./Inter/Inter-ExtraBold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  src: url("./InterItalic/Inter-Regular-Italic.ttf") format("truetype");
+}

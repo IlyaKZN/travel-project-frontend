@@ -93,6 +93,7 @@ export default defineComponent({
   cursor: pointer
   font-family: "Inter"
   letter-spacing: 0.8px
+  outline: none
 
 .reference-link
   margin-top: 23px

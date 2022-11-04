@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import MainView from '../views/MainView.vue';
+import SignUpView from '../views/SignUpView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', component: MainView },
+  { path: '/signup', component: SignUpView },
 ];
 
 const router = createRouter({
