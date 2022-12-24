@@ -2,7 +2,7 @@
   <form class="form" @submit.prevent="submitForm">
     <h1 class="title">Создайте учетную<br> запись в <span class="span">We</span>Travel!</h1>
     <div class="inputs-field">
-      <BaseInput v-model="name" placeholder="Имя" name="name" type="text" />
+      <BaseInput v-model="username" placeholder="Имя пользователя" name="username" type="text" />
       <BaseInput v-model="email" placeholder="Электронная почта" name="email" type="email" />
       <BaseInput v-model="password" placeholder="Пароль" name="password" type="password" />
       <BaseInput v-model="repeatedPassword" placeholder="Подтвердите пароль" name="repeatedPassword"
@@ -34,7 +34,7 @@ export default defineComponent({
   name: 'SignUpForm',
   data() {
     return {
-      name: '',
+      username: '',
       email: '',
       password: '',
       repeatedPassword: '',
@@ -49,7 +49,7 @@ export default defineComponent({
   },
   methods: {
     submitForm() {
-      console.log('Форма отправлена');
+      this.$store.commit('')
     },
   },
 });

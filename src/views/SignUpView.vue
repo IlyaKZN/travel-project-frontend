@@ -14,6 +14,7 @@ export default defineComponent({
     SignUpForm,
   },
 });
+
 </script>
 
 <style lang="sass" scoped>
